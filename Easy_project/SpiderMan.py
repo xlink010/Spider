@@ -25,7 +25,7 @@ class SpiderMan(object):
         self.manager.add_new_url(root_url)
         page_number = self.get_url_page(root_url)
         #判断url管理器是否有新url，同时判断抓取了多少个url
-        while(self.manager.has_new_urls() and self.manager.old_url_size() < 100):
+        while(self.manager.has_new_urls() and self.manager.old_url_size() < 163):
             try:
                 new_url = self.manager.get_new_urls()
                 print(new_url)
